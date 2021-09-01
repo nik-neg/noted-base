@@ -8,8 +8,7 @@ cache:
 script:
   - yarn test
 before_deploy:
-  - yarn install
-  - yarn global add travis-ci-cloudfront-invalidation # global
+  - yarn global add travis-ci-cloudfront-invalidation
   - yarn run build
 deploy:
   provider: s3
