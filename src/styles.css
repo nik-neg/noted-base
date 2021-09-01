@@ -26,7 +26,7 @@ a:hover {
 }
 
 a:active {
-  background-color: salmon;
+  background-color: rgb(118, 250, 114);
   color: black;
 }
 
