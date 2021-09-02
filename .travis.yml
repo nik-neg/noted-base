@@ -10,13 +10,14 @@ script:
 before_deploy:
   - yarn global add travis-ci-cloudfront-invalidation
   - yarn run build
+  # https://docs.travis-ci.com/user/deployment/s3/#deploy-to-a-s3-hosted-website
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
-  #endpoint: "s3-website.eu-west-3.amazonaws.com"
-  #region: "eu-west-3"
+  endpoint: "s3-website.eu-west-3.amazonaws.com"
+  region: "eu-west-3"
   skip_cleanup: true
   local-dir: dist
   on:
