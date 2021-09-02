@@ -13,7 +13,6 @@ before_deploy:
   # https://docs.travis-ci.com/user/deployment/s3/#deploy-to-a-s3-hosted-website
 deploy:
   provider: s3
-  edge: true
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
