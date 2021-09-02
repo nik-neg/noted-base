@@ -16,7 +16,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
-  endpoint: "http://aws-training-082021.net.s3-website.eu-west-3.amazonaws.com"
+  endpoint: "aws-training-082021.net.s3-website.eu-west-3.amazonaws.com"
   region: "eu-west-3"
   skip_cleanup: true
   local-dir: dist
